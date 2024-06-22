@@ -1,5 +1,4 @@
-import tablero
-import barcos
+
 import hundir_la_flota
 import numpy as np
 import Juego

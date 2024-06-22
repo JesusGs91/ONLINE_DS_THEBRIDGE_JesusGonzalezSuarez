@@ -6,7 +6,6 @@ def start_juego(tablero_yamato, tablero_enemigo, tablero_copia):
     X_enemigas = 20
     X_yamato = 20
     while True:
-        empieza = random.randint(0,1)
 
         while True:
             while True:
@@ -14,7 +13,7 @@ def start_juego(tablero_yamato, tablero_enemigo, tablero_copia):
                 if (int(coordenadas_disparo.split(",")[0]) and (int(coordenadas_disparo.split(",")[1]))):
                     break
             coordenadas_disparo_x = int(coordenadas_disparo.split(",")[0])-1
-            coordenadas_disparo_y = int(coordenadas_disparo.split(",")[1])
+            coordenadas_disparo_y = int(coordenadas_disparo.split(",")[1])-1
             if Disparo.disparo(coordenadas_disparo_x,coordenadas_disparo_y,tablero_enemigo,tablero_copia)[2] == True:
                 print("Equipo Yamato")
                 print(tablero_yamato)
@@ -22,7 +21,7 @@ def start_juego(tablero_yamato, tablero_enemigo, tablero_copia):
                 print(tablero_copia)
                 X_enemigas = X_enemigas -1 
                 if X_enemigas == 0:
-                    print("El jeugo ha acabado con victoria de Tamako")
+                    print("El juego ha acabado con victoria de Yamato")
                     break
             break
         while True:
@@ -35,7 +34,7 @@ def start_juego(tablero_yamato, tablero_enemigo, tablero_copia):
                 print(tablero_copia)
                 X_yamato -= X_yamato
                 if X_yamato == 0:
-                    print("El jeugo ha acabado con victoria de la maquina")
+                    print("El juego ha acabado con victoria de la maquina")
                     break
             break
 

@@ -3,7 +3,7 @@ import barcos
 
 
 class Tablero:
-    def __init__(self, nombre, ):
+    def __init__(self, nombre):
         self.nombre = nombre
         self.barcos = ((1, 4), (2, 3), (3, 2), (4, 1))
         self.tablero_equipo_Yamato  = tablero.GeneraTablero()

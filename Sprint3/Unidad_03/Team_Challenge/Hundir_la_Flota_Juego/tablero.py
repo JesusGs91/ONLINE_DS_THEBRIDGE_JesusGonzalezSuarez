@@ -2,7 +2,7 @@ import numpy as np
 
 # Crea tablero 10x10
 def GeneraTablero():
-    columnas = " ABCDEFGHIJ"
+    columnas = " -------------------"
     print(" ", end="")
     for letra in columnas:
         print(letra, end=" ")
