@@ -8,5 +8,5 @@ def GeneraTablero():
         print(letra, end=" ")
     print()
     tablero = np.full([10,10]," ")
-    print(tablero)
+    #print(tablero)
     return tablero
